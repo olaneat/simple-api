@@ -8,7 +8,7 @@ from .constants import *
 class Execursion(models.Model):
     id = models.CharField(max_length=20, blank=True, primary_key=True)
     name = models.CharField(max_length=200, blank=True, null=True)
-    dataPageName = models.CharField(max_length=200, blank=True, null=True)
+    dePageName = models.CharField(max_length=200, blank=True, null=True)
     portID = models.CharField(max_length=100, blank=True, null=True)
     type = models.CharField(max_length=50, blank=True, null=True)
     typology = models.CharField(choices=TYPOLOGY,  max_length=200, blank=True, null=True)

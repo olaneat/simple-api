@@ -8,6 +8,12 @@ class ExecursionList(generics.ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
     queryset = Execursion.objects.all()
     serializer_class = ExecursionSerializer
-    
+
+class ExecursionDetial(generics.RetrieveDetroyAPIView):
+    pemission_classes = (IsAuthenticated)
+    queryset = Execursion.objects.all()
+    serializer_class = ExecursionSerializer
+
+
 
     
