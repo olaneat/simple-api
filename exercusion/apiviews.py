@@ -9,7 +9,7 @@ class ExecursionList(generics.ListCreateAPIView):
     queryset = Execursion.objects.all()
     serializer_class = ExecursionSerializer
 
-class ExecursionDetial(generics.RetrieveDetroyAPIView):
+class ExecursionDetial(generics.RetrieveDestroyAPIView):
     pemission_classes = (IsAuthenticated)
     queryset = Execursion.objects.all()
     serializer_class = ExecursionSerializer
