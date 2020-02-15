@@ -1,7 +1,11 @@
+dj-database-url==0.5.0
 Django==2.1.4
+django-heroku==0.3.1
 django-rest-framework==0.1.0
 djangorestframework==3.11.0
 djangorestframework-simplejwt==4.4.0
 mysqlclient==1.4.6
+psycopg2==2.8.4
 PyJWT==1.7.1
 pytz==2019.3
+whitenoise==5.0.1
