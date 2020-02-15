@@ -6,10 +6,11 @@ from .constants import *
 # Create your models here.
 
 class Execursion(models.Model):
+    id = models.CharField(max_length=20, blank=True, primary_key=True)
     name = models.CharField(max_length=200, blank=True, null=True)
     dataPageName = models.CharField(max_length=200, blank=True, null=True)
     portID = models.CharField(max_length=100, blank=True, null=True)
-    tripType = models.CharField(max_length=50, blank=True, null=True)
+    type = models.CharField(max_length=50, blank=True, null=True)
     typology = models.CharField(choices=TYPOLOGY,  max_length=200, blank=True, null=True)
     activityLevel = models.CharField(max_length=150, blank=True, null=True)
     collectionType = models.CharField(max_length=100, blank=True, null=True)
